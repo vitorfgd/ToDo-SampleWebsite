@@ -54,8 +54,8 @@ function newElement() {
     }
 }
 
-var inp = document.getElementById("myInput");
-inp.addEventListener("keydown", function (e) {
+var inputVar = document.getElementById("myInput");
+inputVar.addEventListener("keydown", function (e) {
     if (e.keyCode === 13) {
         newElement ();
     }
