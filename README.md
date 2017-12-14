@@ -5,6 +5,11 @@ I decided to create this website to test some functions in javascript. It might 
 
 If you'd like to help me, you can always **fork** this repository, make your chances and submit a pull request. I'll then evaluate and commit your changes.
 
+Images
+------------
+
+![alt text](site-image.png "Site Preview")
+
 Contributing
 -------------
 

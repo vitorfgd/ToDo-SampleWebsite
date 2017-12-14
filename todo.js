@@ -38,6 +38,7 @@ function newElement() {
     } else {
         document.getElementById("myUL").appendChild(li);
     }
+
     document.getElementById("myInput").value = "";
 
     var span = document.createElement("SPAN");
@@ -57,6 +58,6 @@ function newElement() {
 var inputVar = document.getElementById("myInput");
 inputVar.addEventListener("keydown", function (e) {
     if (e.keyCode === 13) {
-        newElement ();
+        newElement();
     }
 });
