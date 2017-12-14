@@ -1,6 +1,6 @@
-/**/
-/* General CSS settings */
-/**/
+/*  - - - - - - - - - -  */
+/*  General CSS settings */
+/*  - - - - - - - - - -  */
 
 * {
     margin: 0;
@@ -18,9 +18,20 @@ h1 {
     text-transform: uppercase;
 }
 
-/**/
-/* Github and Copyright */
-/**/
+/*  - - - - - - - - - -  */
+/*  Github and Copyright */
+/*  - - - - - - - - - -  */
+
+.github {
+    position: absolute;
+    margin: 15px 0 0 15px;
+    z-index: 1;
+    float: left;
+}
+
+.github:after {
+    clear: both;
+}
 
 #copyright {
     position: relative;
@@ -41,23 +52,12 @@ h1 {
     color: red;
 }
 
-/**/
-/* Header*/
-/**/
-
-.github {
-    position: absolute;
-    margin: 15px 0 0 15px;
-    z-index: 1;
-    float: left;
-}
-
-.github:after {
-    clear: both;
-}
+/*  - - - - - - - - - -  */
+/*         Header        */
+/*  - - - - - - - - - -  */
 
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(back.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/back.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -72,9 +72,9 @@ h1 {
     clear: both;
 }
 
-/**/
-/* Input */
-/**/
+/*  - - - - - - - - - -  */
+/*         Input         */
+/*  - - - - - - - - - -  */
 
 .add {
     width: 100vw;
@@ -127,9 +127,9 @@ h1 {
     }
 }
 
-/**/
-/* Style the list items */
-/**/
+/*  - - - - - - - - - -  */
+/*  Style the list items */
+/*  - - - - - - - - - -  */
 
 ul li {
     cursor: pointer;
@@ -148,27 +148,19 @@ ul li {
     user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
-
 ul li:nth-child(odd) {
     background: #f9f9f9;
 }
-
-/* Darker background-color on hover */
 
 ul li:hover {
     background: #ddd;
     transform: scale(1.005);
 }
 
-/* When clicked on, add a background color and strike out text */
-
 ul li.checked {
     background: #28B9B5;
     color: #fff;
 }
-
-/* Add a "checked" mark when clicked on */
 
 ul li.checked::before {
     content: '';
@@ -182,8 +174,6 @@ ul li.checked::before {
     height: 15px;
     width: 8px;
 }
-
-/* Style the close button */
 
 .close {
     position: absolute;

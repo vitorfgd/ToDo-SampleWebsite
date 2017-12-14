@@ -1,14 +1,14 @@
 ToDoJS - An Experimental ToDo Website/Tool
 -------------
 
-I decided to create this website to test some functions in javascript. It might not be perfect and fully responsive but I'm working on solutions. I'm also using this website to test HTML5, CSS3 and will be using to test MongoDB with PHP.
+I decided to create this website to test some functions in Javascript ES5. I'm also using this project to test HTML5 and CSS3. If you'd like to continue my work, I was planing on implementing local and/or session storage or, maybe, a nice noSQL database.
 
 If you'd like to help me, you can always **fork** this repository, make your chances and submit a pull request. I'll then evaluate and commit your changes.
 
 Images
 ------------
 
-![alt text](site-image.png "Site Preview")
+![alt text](img/site-image.png "Site Preview")
 
 Contributing
 -------------
