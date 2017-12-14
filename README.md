@@ -1,4 +1,4 @@
-ToDoJS - An Experimental ToDo Website/Tool
+ToDoJS - An experimental free "to do" website template.
 -------------
 
 I decided to create this website to test some functions in Javascript ES5. I'm also using this project to test HTML5 and CSS3. If you'd like to continue my work, I was planing on implementing local and/or session storage or, maybe, a nice noSQL database.
