@@ -2,22 +2,40 @@
 <html lang="">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <title></title>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <title>ToDoJS</title>
+
 </head>
 
 <body>
 
+    <div class="github">
+
+        <a class="github-button" href="https://github.com/vitorfgd/ToDo-SampleWebsite" data-icon="octicon-star" data-show-count="true" aria-label="Star vitorfgd/ToDo-SampleWebsite on GitHub">Star</a>
+
+        <a class="github-button" href="https://github.com/vitorfgd/ToDo-SampleWebsite/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download vitorfgd/ToDo-SampleWebsite on GitHub">Download</a>
+
+        <div id="copyright">
+            Created with <i class="ion-android-favorite heart"></i> by <a href="https://www.twitter.com/vitorfgd">Vitor Figueredo</a>
+        </div>
+
+    </div>
+
     <div class="header">
+
         <div class="add">
             <input type="text" class="add__description" id="myInput" placeholder="I need to remember to...">
             <button class="add__btn" onclick="newElement()"><i class="ion-checkmark-circled"></i></button>
         </div>
+
     </div>
 
     <ul id="myUL">
@@ -25,10 +43,6 @@
         <li>After a task is finished, you can either click on the task and it will finish it or...</li>
         <li>You can delete the task using the delete button on the side of the task.</li>
     </ul>
-
-    <footer>
-        Created with <i class="ion-android-favorite heart"></i> by <a href="https://www.twitter.com/vitorfgd">Vitor Figueredo</a>
-    </footer>
 
     <script src="todo.js"></script>
 
