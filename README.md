@@ -1,4 +1,5 @@
-#ToDoJS - An Experimental ToDo Website/Tool
+ToDoJS - An Experimental ToDo Website/Tool
+-------------
 
 I decided to create this website to test some functions in javascript. It might not be perfect and fully responsive but I'm working on solutions. I'm also using this website to test HTML5, CSS3 and will be using to test MongoDB with PHP.
 
