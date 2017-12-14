@@ -1,4 +1,5 @@
 /* General CSS settings */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,25 +10,59 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    font-family: inherit;
+    color: #eee;
+    text-transform: uppercase;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    padding-top: 5px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 11px;
+    text-align: center;
+    background-color: white;
+}
+
+footer a {
+    color: #28B9B5;
+    opacity: 0.75;
+    text-decoration: none;
+}
+
+footer .heart {
+    color: red;
+}
+
 /* Header (Image + Input) */
+
 /* Image and Spaces */
+
 .header {
-    height: 40vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(back.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(back.png);
     background-size: cover;
     background-position: center;
     position: relative;
-    padding: 90px 0 90px 0;
+    display: table-cell;
+    vertical-align: middle;
+    height: 45vh;
 }
 
-    .header:after {
+.header:after {
     content: "";
     display: table;
     clear: both;
 }
 
 /* Input form */
+
 .add {
+    width: 100vw;
+    display: inline-block;
     margin: 0 auto;
     text-align: center;
 }
@@ -45,7 +80,7 @@ body {
     width: 60%;
 }
 
-    .add__description:focus {
+.add__description:focus {
     outline: none;
     border: 1px solid #28B9B5;
 }
@@ -63,30 +98,30 @@ body {
     transition: font-size 0.3s;
 }
 
-    .add__btn:hover {
+.add__btn:hover {
     animation: roll 0.5s;
 }
 
 @keyframes roll {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Style the list items */
+
 ul li {
     cursor: pointer;
     position: relative;
     padding: 16px 10px 18px 60px;
     background: #eee;
     font-family: 'Lato', 'Open Sans', sans-serif;
-    color: rgba(50, 50, 50, 0.85);
+    color: rgba(50, 50, 50, 0.75);
     font-size: 15px;
     transition: 0.5s;
-    text-transform: capitalize;
 
     /* make the list items unselectable */
     -webkit-user-select: none;
@@ -96,22 +131,27 @@ ul li {
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
+
 ul li:nth-child(odd) {
     background: #f9f9f9;
 }
 
 /* Darker background-color on hover */
+
 ul li:hover {
     background: #ddd;
+    transform: scale(1.005);
 }
 
 /* When clicked on, add a background color and strike out text */
+
 ul li.checked {
     background: #28B9B5;
     color: #fff;
 }
 
 /* Add a "checked" mark when clicked on */
+
 ul li.checked::before {
     content: '';
     position: absolute;
@@ -126,21 +166,20 @@ ul li.checked::before {
 }
 
 /* Style the close button */
+
 .close {
     position: absolute;
-    right: 5px;
+    right: 8px;
     top: 5px;
     padding: 12px 16px 12px 16px;
 }
 
 .close:hover {
-    background-color: #f44336;
-    color: white;
+    background-color: #323232;
+    color: #eee;
 }
 
-
-
-
-
-
-
+ul li.checked .close:hover {
+    background-color: #eee;
+    color: black;
+}
